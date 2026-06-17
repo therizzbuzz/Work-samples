@@ -1,0 +1,299 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ridhi Jain — Branding & Visual Communication Designer</title>
+<meta name="description" content="Portfolio of Ridhi Jain: branding, illustration, graphic design, and exhibition design across print, digital, and built space.">
+<meta property="og:title" content="Ridhi Jain — Branding & Visual Communication Designer">
+<meta property="og:description" content="Branding, illustration, graphic design, and exhibition design.">
+<meta property="og:type" content="website"><meta property="og:image" content="p07.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2315140f'/%3E%3Ctext x='50' y='71' font-family='Georgia,serif' font-size='62' font-weight='700' fill='%23d6453b' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#15140f;--muted:#6c6a63;--line:#ececea;--accent:#d6453b;--accent-ink:#b8362d;
+--paper:#faf9f7;--radius:12px;--maxw:1200px;--nav-h:64px;
+--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+--serif:'Fraunces','Iowan Old Style',Georgia,serif;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.65;
+-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+[id]{scroll-margin-top:90px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+h1,h2,h3,h4{letter-spacing:-.02em}
+
+/* progress + nav */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:60;transition:width .1s linear}
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:50;display:flex;align-items:center;
+justify-content:space-between;padding:0 28px;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(14px);
+border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s,height .3s}
+.nav.scrolled{border-color:var(--line);box-shadow:0 4px 24px rgba(0,0,0,.04)}
+.brand{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;text-decoration:none}
+.brand b{color:var(--accent)}
+.navright{display:flex;align-items:center;gap:22px}
+.navlinks{display:flex;gap:22px}
+.navlinks a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;padding:6px 0;
+border-bottom:2px solid transparent;transition:.2s}
+.navlinks a:hover,.navlinks a.active{color:var(--ink);border-color:var(--accent)}
+.nav-cv{text-decoration:none;font-size:13px;font-weight:600;color:#fff;background:var(--ink);
+padding:9px 16px;border-radius:40px;transition:.2s}
+.nav-cv:hover{background:var(--accent)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px;width:42px;height:42px}
+.burger span{display:block;height:2px;width:24px;background:var(--ink);margin:5px auto;transition:.25s}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:calc(var(--nav-h) + 20px) 0 60px;overflow:hidden}
+.hero:before{content:"";position:absolute;top:-20%;right:-10%;width:60vw;height:60vw;border-radius:50%;
+background:radial-gradient(circle at 30% 30%,rgba(214,69,59,.10),transparent 62%);z-index:0}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-ink);
+font-weight:600;margin-bottom:22px;opacity:0;animation:fadeUp .7s .05s forwards}
+.hero h1{font-family:var(--serif);font-size:clamp(3rem,10vw,7rem);line-height:.98;font-weight:600;margin:0;
+opacity:0;animation:fadeUp .8s .12s forwards}
+.hero .role{display:block;font-family:var(--font);color:var(--muted);font-weight:400;
+font-size:clamp(1.05rem,2.6vw,1.6rem);letter-spacing:0;margin-top:20px;max-width:34ch;
+opacity:0;animation:fadeUp .8s .22s forwards}
+.hero p.intro{max-width:54ch;color:var(--muted);font-size:1.08rem;margin:24px 0 32px;opacity:0;animation:fadeUp .8s .32s forwards}
+.cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .42s forwards}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:500;font-size:15px;
+padding:13px 24px;border-radius:40px;border:1px solid var(--ink);transition:.2s;cursor:pointer}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.btn.ghost:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+.disc{margin-top:46px;display:flex;gap:10px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .52s forwards}
+.disc span{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+border:1px solid var(--line);border-radius:40px;padding:6px 14px}
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:12px;
+letter-spacing:.2em;text-transform:uppercase;z-index:1;animation:bob 1.8s ease-in-out infinite}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* sections */
+.section{padding:84px 0;border-top:1px solid var(--line)}
+.sec-head{max-width:64ch;margin-bottom:42px}
+.kicker{font-size:13px;letter-spacing:.2em;color:var(--accent-ink);font-weight:700;text-transform:uppercase}
+.sec-head h2{font-family:var(--serif);font-size:clamp(2rem,4.4vw,3.1rem);margin:.25em 0 .3em;font-weight:600}
+.lead{color:var(--muted);font-size:1.1rem;margin:0}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:start}
+.portrait{position:relative}
+.portrait img{width:100%;border-radius:18px;filter:grayscale(.1)}
+.portrait .ring{position:absolute;inset:-10px;border:1px solid var(--accent);border-radius:24px;opacity:.4}
+.about-bio p{font-size:1.12rem;margin:0 0 26px;max-width:62ch}
+.about-bio h4{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{font-size:13.5px;border:1px solid var(--line);background:var(--paper);border-radius:40px;padding:7px 14px;transition:.2s}
+.chip:hover{border-color:var(--accent);color:var(--accent-ink)}
+.about-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:54px 0 0}
+.stat{text-align:center;padding:24px 10px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}
+.stat .num{display:block;font-family:var(--serif);font-size:clamp(2rem,5vw,3rem);font-weight:600;color:var(--accent-ink);line-height:1}
+.stat .lbl{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px;display:block}
+
+/* work filter */
+.filterbar{position:sticky;top:var(--nav-h);z-index:30;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);
+display:flex;flex-wrap:wrap;gap:10px;padding:16px 0;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.fbtn{font-family:inherit;font-size:13.5px;font-weight:500;color:var(--muted);background:none;border:1px solid var(--line);
+border-radius:40px;padding:8px 16px;cursor:pointer;transition:.2s}
+.fbtn:hover{color:var(--ink);border-color:var(--ink)}
+.fbtn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.project{margin:46px 0 0}
+.project.is-hidden{display:none}
+.proj-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.project h3{font-size:1.32rem;font-weight:600;margin:0}
+.tag{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);
+border:1px solid var(--line);border-radius:40px;padding:3px 10px}
+.project .desc{color:var(--muted);max-width:76ch;margin:8px 0 18px}
+.project .desc em{color:var(--ink);font-style:normal;font-weight:500}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin:-2px 0 18px}
+.btn-link{text-decoration:none;font-size:13.5px;font-weight:500;color:var(--accent-ink);border:1px solid var(--line);
+background:var(--paper);padding:8px 14px;border-radius:40px;transition:.2s}
+.btn-link:hover{border-color:var(--accent);background:#fff}
+.gallery{display:grid;gap:16px}
+.gallery.grid{grid-template-columns:repeat(auto-fill,minmax(330px,1fr))}
+.gallery.feature{grid-template-columns:1fr;max-width:1000px}
+.card{margin:0;position:relative;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line);
+background:#f3f3f3;cursor:zoom-in;aspect-ratio:2/1}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.card:after{content:"";position:absolute;inset:0;background:rgba(20,20,20,0);transition:.3s}
+.card:hover img{transform:scale(1.05)}
+.card:hover:after{background:rgba(20,20,20,.05)}
+.card:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* videos */
+.vgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.vcard{display:flex;align-items:center;gap:16px;text-decoration:none;padding:20px;border:1px solid var(--line);
+border-radius:var(--radius);background:var(--paper);transition:.2s}
+.vcard:hover{background:#fff;border-color:var(--accent);transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.06)}
+.vplay{flex:0 0 46px;height:46px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;
+justify-content:center;font-size:14px;padding-left:3px}
+.vmeta{display:flex;flex-direction:column}.vmeta strong{font-weight:600}.vmeta span{color:var(--muted);font-size:13.5px}
+
+/* timeline */
+.timeline{position:relative;margin-top:10px;padding-left:30px}
+.timeline:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.t-item{position:relative;padding:0 0 30px 26px}
+.t-dot{position:absolute;left:-30px;top:6px;width:16px;height:16px;border-radius:50%;background:#fff;
+border:3px solid var(--accent);box-shadow:0 0 0 4px #fff}
+.t-dot.edu{border-color:var(--ink)}
+.t-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;background:var(--paper);transition:.2s}
+.t-item:hover .t-card{border-color:var(--accent);box-shadow:0 10px 28px rgba(0,0,0,.05);transform:translateX(2px)}
+.t-top{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
+.t-top h4{font-size:1.16rem;font-weight:600;margin:0}
+.t-date{font-size:13px;color:var(--accent-ink);font-weight:600;white-space:nowrap}
+.t-co{font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:4px 0 10px}
+.t-card p{margin:0;color:var(--muted);max-width:78ch}
+
+/* contact */
+.contact{padding:92px 0 80px;border-top:1px solid var(--line);text-align:center}
+.contact h2{font-family:var(--serif);font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:600;margin:0 0 14px}
+.contact p{color:var(--muted);max-width:48ch;margin:0 auto 26px}
+.cmeta{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:14px;margin:22px 0 6px}
+.socials{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.socials a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;border-bottom:1px solid transparent;transition:.2s}
+.socials a:hover{color:var(--accent);border-color:var(--accent)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;letter-spacing:.04em}
+
+/* back to top */
+.totop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--ink);color:#fff;
+border:0;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;
+transform:translateY(10px);transition:.3s;z-index:40}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop:hover{background:var(--accent)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,14,14,.95);display:none;align-items:center;justify-content:center;padding:34px}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain;border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#eee;font-size:14px;padding:0 20px}
+.lb-count{position:absolute;top:22px;left:0;right:0;text-align:center;color:#aaa;font-size:13px;letter-spacing:.1em}
+.lb button{position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;cursor:pointer;
+border-radius:50%;width:50px;height:50px;font-size:24px;display:flex;align-items:center;justify-content:center;transition:.2s}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb-close{top:20px;right:20px}.lb-prev{left:20px;top:50%;transform:translateY(-50%)}.lb-next{right:20px;top:50%;transform:translateY(-50%)}
+
+@media (max-width:860px){
+  .about-grid{grid-template-columns:1fr;gap:30px}
+  .portrait{max-width:260px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .navlinks{position:fixed;top:var(--nav-h);left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 0;
+    border-bottom:1px solid var(--line);transform:translateY(-140%);transition:transform .3s;box-shadow:0 16px 30px rgba(0,0,0,.08)}
+  .navlinks.open{transform:translateY(0)}
+  .navlinks a{padding:13px 28px;border-bottom:1px solid var(--line)}
+  .burger{display:block}
+  .nav-cv{display:none}
+  .section{padding:58px 0}
+  .gallery.grid{grid-template-columns:1fr}
+  .filterbar{top:var(--nav-h)}
+  .lb-prev{left:8px}.lb-next{right:8px}.lb button{width:44px;height:44px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}.hero .eyebrow,.hero h1,.hero .role,.hero p.intro,.cta,.disc{opacity:1!important}}
+</style></head><body>
+<div class="progress"></div>
+<nav class="nav"><a class="brand" href="#home">RIDHI <b>JAIN</b></a>
+<div class="navright"><div class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+<a class="nav-cv" href="ridhi-jain-cv.pdf" download>Download CV</a>
+<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button></div></nav><header id="home" class="hero">
+<div class="wrap"><span class="eyebrow">Branding &amp; Visual Communication</span>
+<h1>Ridhi Jain<span class="role">I turn ideas, brands, and spaces into human-centered visual stories.</span></h1>
+<p class="intro">Visual communication designer working across illustration, graphic design, exhibition design, and motion — for studios, brands, and built environments.</p>
+<div class="cta"><a class="btn primary" href="#work">View Work</a><a class="btn ghost" href="ridhi-jain-cv.pdf" download>Download CV</a></div>
+<div class="disc"><span>Illustration</span><span>Branding</span><span>Graphic Design</span><span>Exhibition Design</span><span>Photography</span><span>Motion</span></div>
+</div><div class="scrollcue">Scroll</div></header><section id="about" class="section"><div class="wrap">
+<header class="sec-head reveal"><span class="kicker">About</span><h2>Designer &amp; visual storyteller</h2></header>
+<div class="about-grid">
+<div class="portrait reveal"><span class="ring"></span><img src="portrait.webp" alt="Portrait of Ridhi Jain"></div>
+<div class="about-bio reveal"><p>Visual Communication Designer and visual storyteller, transforming ideas, brands, and spaces into compelling, human-centered narratives. Working across print, digital, and experiential formats, I use graphics, illustration, photography, and videography to translate complex ideas into meaningful visual experiences that inform, engage, and inspire.</p>
+<h4>Tools &amp; Software</h4><div class="chips"><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">Premiere Pro</span><span class="chip">After Effects</span><span class="chip">InDesign</span><span class="chip">Procreate</span><span class="chip">DaVinci Resolve</span><span class="chip">Figma</span><span class="chip">PowerPoint</span></div>
+<h4>Core Competencies</h4><div class="chips"><span class="chip">Brand &amp; Communications Strategy</span><span class="chip">Creative Operations</span><span class="chip">Project Storytelling</span><span class="chip">Media &amp; Publication Packaging</span><span class="chip">Business Development Support</span><span class="chip">Employer Branding</span><span class="chip">Photography &amp; Videography Direction</span><span class="chip">Visual Communication</span><span class="chip">Vendor &amp; Agency Management</span><span class="chip">Organizational Storytelling</span><span class="chip">Cross-functional Stakeholder Management</span></div>
+<div class="about-actions"><a class="btn primary" href="ridhi-jain-cv.pdf" download>Download CV</a>
+<a class="btn ghost" href="#contact">Get in touch</a></div></div></div>
+<div class="stats"><div class="stat reveal"><span class="num" data-target="7" data-suffix="+">0</span><span class="lbl">Years</span></div><div class="stat reveal"><span class="num" data-target="5" data-suffix="">0</span><span class="lbl">Studios</span></div><div class="stat reveal"><span class="num" data-target="4" data-suffix="">0</span><span class="lbl">Cities</span></div><div class="stat reveal"><span class="num" data-target="50" data-suffix="+">0</span><span class="lbl">Projects</span></div></div></div></section><section id="work" class="section"><div class="wrap">
+<header class="sec-head reveal"><span class="kicker">Work</span><h2>Selected projects</h2>
+<p class="lead">Illustration, branding, social, events, and exhibition design. Filter by discipline, click any image to zoom.</p></header>
+<div class="filterbar"><button class="fbtn active" data-filter="all">All</button><button class="fbtn" data-filter="visual">Visual Design</button><button class="fbtn" data-filter="social">Social Media</button><button class="fbtn" data-filter="event">Event &amp; Exhibition</button><button class="fbtn" data-filter="graphic">Graphic Design</button><button class="fbtn" data-filter="merch">Merchandise</button><button class="fbtn" data-filter="spatial">Spatial Design</button><button class="fbtn" data-filter="video">Video</button></div><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>Selected Illustrations &amp; Graphics</h3><span class="tag">Visual Design</span></div><p class="desc">A cross-section of illustration and graphic work spanning studio commissions and personal pieces.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Selected Illustrations &amp; Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p03.webp" alt="Selected Illustrations &amp; Graphics" data-cap="Selected Illustrations &amp; Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Selected Illustrations &amp; Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p04.webp" alt="Selected Illustrations &amp; Graphics" data-cap="Selected Illustrations &amp; Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Selected Illustrations &amp; Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p05.webp" alt="Selected Illustrations &amp; Graphics" data-cap="Selected Illustrations &amp; Graphics"></figure></div></article><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>G20 Summit 2023 — Award-Winning Poster</h3><span class="tag">Visual Design</span></div><p class="desc">The poster explores how society struggles to leverage its local potential and identity — through poverty, public spaces, and economic disparity, and how these manifest in the digital world. While delivery platforms and streaming services have become symbols of comfort and convenience, a large part of the population still struggles to afford basic necessities. The work raises awareness of that disparity and the urgent need to address it. <em>Third winning entry in a national poster-making competition.</em></p><div class="gallery feature"><figure class="card" tabindex="0" role="button" aria-label="Open image: G20 Summit 2023 — Award-Winning Poster"><img class="gallery-img" loading="lazy" decoding="async" src="p07.webp" alt="G20 Summit 2023 — Award-Winning Poster" data-cap="G20 Summit 2023 — Award-Winning Poster"></figure></div></article><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>Graphics for an Architectural Studio</h3><span class="tag">Visual Design</span></div><p class="desc">Design for an interactive studio wall, and an illustration for World Environment Day.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Graphics for an Architectural Studio"><img class="gallery-img" loading="lazy" decoding="async" src="p09.webp" alt="Graphics for an Architectural Studio" data-cap="Graphics for an Architectural Studio"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Graphics for an Architectural Studio"><img class="gallery-img" loading="lazy" decoding="async" src="p10.webp" alt="Graphics for an Architectural Studio" data-cap="Graphics for an Architectural Studio"></figure></div></article><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>Graphics for Events</h3><span class="tag">Visual Design</span></div><p class="desc">Theme-based graphics conceptualised and designed for events hosted by architectural studios.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Graphics for Events"><img class="gallery-img" loading="lazy" decoding="async" src="p11.webp" alt="Graphics for Events" data-cap="Graphics for Events"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Graphics for Events"><img class="gallery-img" loading="lazy" decoding="async" src="p12.webp" alt="Graphics for Events" data-cap="Graphics for Events"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Graphics for Events"><img class="gallery-img" loading="lazy" decoding="async" src="p13.webp" alt="Graphics for Events" data-cap="Graphics for Events"></figure></div></article><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>Celebration Season Illustrations</h3><span class="tag">Visual Design</span></div><p class="desc">A set of seasonal illustrations produced for the studio across the festive calendar.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Celebration Season Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p14.webp" alt="Celebration Season Illustrations" data-cap="Celebration Season Illustrations"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Celebration Season Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p15.webp" alt="Celebration Season Illustrations" data-cap="Celebration Season Illustrations"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Celebration Season Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p16.webp" alt="Celebration Season Illustrations" data-cap="Celebration Season Illustrations"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Celebration Season Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p17.webp" alt="Celebration Season Illustrations" data-cap="Celebration Season Illustrations"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Celebration Season Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p18.webp" alt="Celebration Season Illustrations" data-cap="Celebration Season Illustrations"></figure></div></article><article class="project reveal" data-cat="visual"><div class="proj-head"><h3>Architectural Section Illustration</h3><span class="tag">Visual Design</span></div><p class="desc">A section through a building, illustrated for a feature published on ArchDaily.</p><div class="links"><a class="btn-link" href="https://www.archdaily.com/1010709/surat-diamond-bourse-morphogenesis/656f5470f84bcc06ab19cef9-surat-diamond-bourse-morphogenesis-sustainability-features?next_project=no" target="_blank" rel="noopener">View on ArchDaily <span aria-hidden="true">&#8599;</span></a></div><div class="gallery feature"><figure class="card" tabindex="0" role="button" aria-label="Open image: Architectural Section Illustration"><img class="gallery-img" loading="lazy" decoding="async" src="p19.webp" alt="Architectural Section Illustration" data-cap="Architectural Section Illustration"></figure></div></article><article class="project reveal" data-cat="social"><div class="proj-head"><h3>Zeyka — Informative Illustrations</h3><span class="tag">Social Media</span></div><p class="desc">Illustrated, easy-to-read infographics and posts, including a Pinterest infographic strip.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Zeyka — Informative Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p22.webp" alt="Zeyka — Informative Illustrations" data-cap="Zeyka — Informative Illustrations"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Zeyka — Informative Illustrations"><img class="gallery-img" loading="lazy" decoding="async" src="p23.webp" alt="Zeyka — Informative Illustrations" data-cap="Zeyka — Informative Illustrations"></figure></div></article><article class="project reveal" data-cat="social"><div class="proj-head"><h3>People of Morpho</h3><span class="tag">Social Media</span></div><p class="desc">An illustrated social series — “What it takes to be Morphed?”</p><div class="links"><a class="btn-link" href="https://www.instagram.com/morphogenesis.official/p/CcFttu-N8Sn/" target="_blank" rel="noopener">View post <span aria-hidden="true">&#8599;</span></a><a class="btn-link" href="https://www.instagram.com/p/CpiO97PvJe7/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener">View post <span aria-hidden="true">&#8599;</span></a></div><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: People of Morpho"><img class="gallery-img" loading="lazy" decoding="async" src="p24.webp" alt="People of Morpho" data-cap="People of Morpho"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: People of Morpho"><img class="gallery-img" loading="lazy" decoding="async" src="p25.webp" alt="People of Morpho" data-cap="People of Morpho"></figure></div></article><article class="project reveal" data-cat="social"><div class="proj-head"><h3>Women&#x27;s Day 2025</h3><span class="tag">Social Media</span></div><p class="desc">Illustrated social posts celebrating Women's Day.</p><div class="links"><a class="btn-link" href="https://www.instagram.com/confluence_consultancy/p/DG77kymTEUl/" target="_blank" rel="noopener">View post <span aria-hidden="true">&#8599;</span></a></div><div class="gallery feature"><figure class="card" tabindex="0" role="button" aria-label="Open image: Women&#x27;s Day 2025"><img class="gallery-img" loading="lazy" decoding="async" src="p26.webp" alt="Women&#x27;s Day 2025" data-cap="Women&#x27;s Day 2025"></figure></div></article><article class="project reveal" data-cat="event"><div class="proj-head"><h3>HERO: Reigniting Resilience</h3><span class="tag">Event & Exhibition</span></div><p class="desc">Logo, colour palette, merchandise, brochures, ad banners, and website graphics for an event under the Inspire One programme.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: HERO: Reigniting Resilience"><img class="gallery-img" loading="lazy" decoding="async" src="p28.webp" alt="HERO: Reigniting Resilience" data-cap="HERO: Reigniting Resilience"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: HERO: Reigniting Resilience"><img class="gallery-img" loading="lazy" decoding="async" src="p29.webp" alt="HERO: Reigniting Resilience" data-cap="HERO: Reigniting Resilience"></figure></div></article><article class="project reveal" data-cat="event"><div class="proj-head"><h3>CMAI NGF — Exhibition Graphics</h3><span class="tag">Event & Exhibition</span></div><p class="desc">Graphic design and wayfinding for the CMAI National Garment Fair exhibition.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Exhibition Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p31.webp" alt="CMAI NGF — Exhibition Graphics" data-cap="CMAI NGF — Exhibition Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Exhibition Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p32.webp" alt="CMAI NGF — Exhibition Graphics" data-cap="CMAI NGF — Exhibition Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Exhibition Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p33.webp" alt="CMAI NGF — Exhibition Graphics" data-cap="CMAI NGF — Exhibition Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Exhibition Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p34.webp" alt="CMAI NGF — Exhibition Graphics" data-cap="CMAI NGF — Exhibition Graphics"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Exhibition Graphics"><img class="gallery-img" loading="lazy" decoding="async" src="p35.webp" alt="CMAI NGF — Exhibition Graphics" data-cap="CMAI NGF — Exhibition Graphics"></figure></div></article><article class="project reveal" data-cat="graphic"><div class="proj-head"><h3>Branding &amp; Editorial</h3><span class="tag">Graphic Design</span></div><p class="desc">Identity work (OAK, Pack n Call), publication layouts, and product branding.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: Branding &amp; Editorial"><img class="gallery-img" loading="lazy" decoding="async" src="p37.webp" alt="Branding &amp; Editorial" data-cap="Branding &amp; Editorial"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Branding &amp; Editorial"><img class="gallery-img" loading="lazy" decoding="async" src="p38.webp" alt="Branding &amp; Editorial" data-cap="Branding &amp; Editorial"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Branding &amp; Editorial"><img class="gallery-img" loading="lazy" decoding="async" src="p39.webp" alt="Branding &amp; Editorial" data-cap="Branding &amp; Editorial"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: Branding &amp; Editorial"><img class="gallery-img" loading="lazy" decoding="async" src="p40.webp" alt="Branding &amp; Editorial" data-cap="Branding &amp; Editorial"></figure></div></article><article class="project reveal" data-cat="merch"><div class="proj-head"><h3>Merchandise Design</h3><span class="tag">Merchandise</span></div><p class="desc">Apparel and merch concepts developed from brand identities.</p><div class="gallery feature"><figure class="card" tabindex="0" role="button" aria-label="Open image: Merchandise Design"><img class="gallery-img" loading="lazy" decoding="async" src="p42.webp" alt="Merchandise Design" data-cap="Merchandise Design"></figure></div></article><article class="project reveal" data-cat="spatial"><div class="proj-head"><h3>IHGF Delhi Fair</h3><span class="tag">Spatial Design</span></div><p class="desc">Exhibition and stall design for the Indian Handicrafts & Gift Fair at India Expo Mart, Greater Noida.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p44.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p45.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p46.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p47.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p48.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p49.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p50.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p51.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p52.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p53.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: IHGF Delhi Fair"><img class="gallery-img" loading="lazy" decoding="async" src="p54.webp" alt="IHGF Delhi Fair" data-cap="IHGF Delhi Fair"></figure></div></article><article class="project reveal" data-cat="spatial"><div class="proj-head"><h3>CMAI NGF — Pavilion &amp; Exhibition</h3><span class="tag">Spatial Design</span></div><p class="desc">Spatial and pavilion design for the CMAI National Garment Fair.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p55.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p56.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p57.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p58.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p59.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p60.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p61.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: CMAI NGF — Pavilion &amp; Exhibition"><img class="gallery-img" loading="lazy" decoding="async" src="p62.webp" alt="CMAI NGF — Pavilion &amp; Exhibition" data-cap="CMAI NGF — Pavilion &amp; Exhibition"></figure></div></article><article class="project reveal" data-cat="spatial"><div class="proj-head"><h3>SIFF 2020</h3><span class="tag">Spatial Design</span></div><p class="desc">Exhibition design for the Sharjah International Film Festival, 2020.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: SIFF 2020"><img class="gallery-img" loading="lazy" decoding="async" src="p63.webp" alt="SIFF 2020" data-cap="SIFF 2020"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: SIFF 2020"><img class="gallery-img" loading="lazy" decoding="async" src="p64.webp" alt="SIFF 2020" data-cap="SIFF 2020"></figure></div></article><article class="project reveal" data-cat="spatial"><div class="proj-head"><h3>The Inner Space — Architectural Thesis</h3><span class="tag">Spatial Design</span></div><p class="desc">An architectural thesis exploring spatial experience and the design of the built environment.</p><div class="gallery grid"><figure class="card" tabindex="0" role="button" aria-label="Open image: The Inner Space — Architectural Thesis"><img class="gallery-img" loading="lazy" decoding="async" src="p65.webp" alt="The Inner Space — Architectural Thesis" data-cap="The Inner Space — Architectural Thesis"></figure><figure class="card" tabindex="0" role="button" aria-label="Open image: The Inner Space — Architectural Thesis"><img class="gallery-img" loading="lazy" decoding="async" src="p66.webp" alt="The Inner Space — Architectural Thesis" data-cap="The Inner Space — Architectural Thesis"></figure></div></article><article class="project reveal" data-cat="video"><div class="proj-head"><h3>Motion & Video</h3><span class="tag">Video</span></div><p class="desc">Event films, stop-motion, and conceptual shorts.</p><div class="vgrid"><a class="vcard" href="https://www.youtube.com/watch?v=Q5-Ac6C2JTk" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>Indian Handicraft Gift Fair</strong><span>Event film</span></span></a><a class="vcard" href="https://www.youtube.com/watch?v=Qfle9mBFQq8" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>Deal it with D — Logo &amp; Animation</strong><span>Intro video</span></span></a><a class="vcard" href="https://www.youtube.com/watch?v=NpOBUQ8RbEo" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>It&#x27;s Always Summer</strong><span>The Silent Shore</span></span></a><a class="vcard" href="https://www.youtube.com/watch?v=NpOBUQ8RbEo" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>Stop-Motion Screensaver</strong><span>For an architectural firm</span></span></a><a class="vcard" href="https://1drv.ms/v/s!AoZ-6HF5fCfygrZQfhEDqeVgBwS6eA" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>New Studio Announcement</strong><span>Announcement film</span></span></a><a class="vcard" href="https://www.instagram.com/reel/Ce3evH-DSgp/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noopener"><span class="vplay" aria-hidden="true">&#9658;</span><span class="vmeta"><strong>Conceptual Video on Sensitivity</strong><span>Short film</span></span></a></div></article></div></section><section id="experience" class="section"><div class="wrap">
+<header class="sec-head reveal"><span class="kicker">Experience</span><h2>Where I&rsquo;ve worked</h2></header>
+<div class="timeline"><div class="t-item reveal"><span class="t-dot"></span><div class="t-card"><div class="t-top"><h4>Communication Executive</h4><span class="t-date">Dec 2023 – Present</span></div><div class="t-co">Confluence</div><p>Leading the firm&#x27;s end-to-end visual identity and brand communication across a diverse architectural portfolio. Directing the communication team in partnership with the founders, overseeing all PR deliverables — award submissions, social media, and digital presence — while coordinating external consultants and collaborating with directors and project leads.</p></div></div><div class="t-item reveal"><span class="t-dot"></span><div class="t-card"><div class="t-top"><h4>Senior Executive — Visual Communications</h4><span class="t-date">Mar 2022 – Nov 2023</span></div><div class="t-co">Morphogenesis</div><p>Managed visual communication and brand storytelling with architects and designers across Delhi, Mumbai, Pune, and Bengaluru studios. Translated architectural concepts into narratives for national and international media, awards, publications, and lectures; developed social campaigns, curated archival content, and drove internal engagement.</p></div></div><div class="t-item reveal"><span class="t-dot"></span><div class="t-card"><div class="t-top"><h4>Graphic Designer → Team Lead</h4><span class="t-date">2021 – 2022</span></div><div class="t-co">Nine Thirty Four</div><p>Led branding and communication projects for multiple clients, managing creative execution, stakeholder coordination, and delivery across social media, websites, and brochures.</p></div></div><div class="t-item reveal"><span class="t-dot"></span><div class="t-card"><div class="t-top"><h4>Spatial &amp; Graphic Designer</h4><span class="t-date">2019 – 2020</span></div><div class="t-co">TOD Innovations</div><p>Designed and executed exhibition projects and art installations with production teams and artists across India. Major projects: IHGF Greater Noida, Destination North East (IIT BHU), CMAI Mumbai, and Sharjah International Film Festival (UAE).</p></div></div><div class="t-item reveal"><span class="t-dot"></span><div class="t-card"><div class="t-top"><h4>Visual Communication &amp; Branding</h4><span class="t-date">Ongoing</span></div><div class="t-co">Freelance</div><p>Branding, book covers, presentations, brochures, event communication, photography, videography, and digital content for a range of clients.</p></div></div><div class="t-item reveal"><span class="t-dot edu"></span><div class="t-card"><div class="t-top"><h4>Bachelor of Architecture (B.Arch.)</h4><span class="t-date">2013 – 2018</span></div><div class="t-co">Guru Nanak Dev University</div></div></div></div></div></section><div id="contact" class="contact"><div class="wrap">
+<span class="kicker">Contact</span><h2>Let&rsquo;s work together</h2>
+<p>Available for branding, illustration, graphic design, and exhibition design projects.</p>
+<a class="btn primary" href="mailto:thatssoridhi@gmail.com">Email me</a><div class="cmeta"><span>Delhi NCR, India</span><span>+91 75082 14094</span><span>thatssoridhi@gmail.com</span></div>
+<div class="socials"><a href="https://www.instagram.com/the.rizz.buzz/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/ridhi-jain-791b76155/" target="_blank" rel="noopener">LinkedIn</a><a href="ridhi-jain-cv.pdf" download>Download CV</a></div></div></div><footer>&copy; 2026 Ridhi Jain &middot; Branding &amp; Visual Communication</footer><div id="lb" class="lb" aria-hidden="true" role="dialog" aria-label="Image viewer">
+<button class="lb-close" aria-label="Close">&times;</button><button class="lb-prev" aria-label="Previous">&#8249;</button>
+<img class="lb-img" src="" alt=""><button class="lb-next" aria-label="Next">&#8250;</button>
+<div class="lb-cap"></div><div class="lb-count"></div></div>
+<button class="totop" aria-label="Back to top">&#8593;</button><script>
+(function(){
+  var nav=document.querySelector('.nav'),prog=document.querySelector('.progress'),totop=document.querySelector('.totop');
+  var burger=document.querySelector('.burger'),links=document.querySelector('.navlinks');
+  burger.addEventListener('click',function(){var o=links.classList.toggle('open');burger.setAttribute('aria-expanded',o);});
+  links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');});});
+  function onScroll(){var y=window.scrollY||document.documentElement.scrollTop;
+    var h=document.documentElement.scrollHeight-window.innerHeight;prog.style.width=(h>0?(y/h*100):0)+'%';
+    nav.classList.toggle('scrolled',y>10);totop.classList.toggle('show',y>600);}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // reveal
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el,i){el.style.transitionDelay=Math.min((i%6)*40,200)+'ms';ro.observe(el);});
+  } else {document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});}
+
+  // active nav
+  var nm={};document.querySelectorAll('.navlinks a').forEach(function(a){nm[a.getAttribute('href').slice(1)]=a;});
+  var secs=[].slice.call(document.querySelectorAll('section[id],header[id],div[id].contact'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+      Object.values(nm).forEach(function(x){x.classList.remove('active');});if(nm[e.target.id])nm[e.target.id].classList.add('active');}});},{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(s){io.observe(s);});
+  }
+
+  // stats count-up
+  var statEls=[].slice.call(document.querySelectorAll('.num'));
+  function countUp(el){var t=+el.dataset.target,suf=el.dataset.suffix||'',d=1100,st=null;
+    function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/d,1);el.textContent=Math.floor(p*t)+(p>=1?suf:'');if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);so.unobserve(e.target);}});},{rootMargin:'0px 0px -15% 0px'});
+    statEls.forEach(function(e){so.observe(e);});
+  } else {statEls.forEach(function(e){e.textContent=e.dataset.target+(e.dataset.suffix||'');});}
+
+  // filters
+  var fbtns=[].slice.call(document.querySelectorAll('.fbtn')),projs=[].slice.call(document.querySelectorAll('.project'));
+  fbtns.forEach(function(b){b.addEventListener('click',function(){
+    fbtns.forEach(function(x){x.classList.remove('active');});b.classList.add('active');
+    var f=b.dataset.filter;projs.forEach(function(p){var show=(f==='all'||p.dataset.cat===f);
+      p.classList.toggle('is-hidden',!show);if(show){p.classList.add('in');}});});});
+
+  // lightbox (visible images only)
+  var lb=document.getElementById('lb'),lbimg=lb.querySelector('.lb-img'),lbcap=lb.querySelector('.lb-cap'),lbcount=lb.querySelector('.lb-count');
+  var list=[],cur=0;
+  function visible(){return [].slice.call(document.querySelectorAll('.gallery-img')).filter(function(im){return im.offsetParent!==null;});}
+  function show(i){cur=(i+list.length)%list.length;var el=list[cur];lbimg.src=el.src;lbimg.alt=el.alt;
+    lbcap.textContent=el.dataset.cap||'';lbcount.textContent=(cur+1)+' / '+list.length;}
+  function open(el){list=visible();cur=list.indexOf(el);if(cur<0){list=[el];cur=0;}show(cur);
+    lb.classList.add('open');lb.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+  function close(){lb.classList.remove('open');lb.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+  document.querySelectorAll('.card').forEach(function(card){var im=card.querySelector('.gallery-img');
+    card.addEventListener('click',function(){open(im);});
+    card.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(im);}});});
+  lb.querySelector('.lb-close').addEventListener('click',close);
+  lb.querySelector('.lb-prev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+  lb.querySelector('.lb-next').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();else if(e.key==='ArrowRight')show(cur+1);else if(e.key==='ArrowLeft')show(cur-1);});
+  var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+  lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;
+    if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null;},{passive:true});
+})();
+</script></body></html>
